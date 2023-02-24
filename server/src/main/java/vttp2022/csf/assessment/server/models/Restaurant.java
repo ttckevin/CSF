@@ -51,4 +51,5 @@ public class Restaurant {
 	public String getMapURL() {
 		return this.mapUrl;
 	}
+	
 }

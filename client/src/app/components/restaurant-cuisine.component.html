@@ -1,1 +1,10 @@
-<p>restaurant-cuisine works!</p>
+<h1>List of Restaurant</h1>
+<table *ngIf="rList">
+    <tr *ngFor="let c of rList, let idx = index">
+        <td>
+            <button (click)="select(rList[idx])">{{c}}</button>
+        </td>
+    </tr>
+</table>
+<button [routerLink]="['/']">BACK</button>
+
